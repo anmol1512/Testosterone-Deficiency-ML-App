@@ -1,0 +1,8 @@
+> **Feature selection & Train - Test split**
+> **Model creation & Training**
+> **Inference**
+> **Evaluation**
+> **Hyperparameter Tuning**
+> **Confusion matrix**
+> **Best Model Evaluation Metrics**
+> **ROC-AUC Analysis**
