@@ -25,24 +25,24 @@ class Model:
         pass
 
     def SVM(self):
-        svc = pickle.load(open('model\SVM_Model.pkl', 'rb'))
+        svc = pickle.load(open('model/SVM_Model.pkl', 'rb'))
         return svc
 
     def XGB(self):
-        xgb =  pickle.load(open('model\XGB_Model.pkl', 'rb'))
+        xgb =  pickle.load(open('model/XGB_Model.pkl', 'rb'))
         return xgb
 
     def RF(self):
-        rf =  pickle.load(open('model\RF_Model.pkl', 'rb'))
+        rf =  pickle.load(open('model/RF_Model.pkl', 'rb'))
         return rf
 
     def neural_net(self):
         ann =  ANN()
-        ann.load_state_dict(t.load('model\ANN_model.pth'))
+        ann.load_state_dict(t.load('model/ANN_model.pth'))
         return ann
 
     def KNN(self):
-        knn = pickle.load(open('model\KNN_Model.pkl', 'rb'))
+        knn = pickle.load(open('model/KNN_Model.pkl', 'rb'))
         return knn
     
     def get_model(self,model_name):
