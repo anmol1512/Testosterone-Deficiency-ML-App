@@ -73,9 +73,9 @@ def main():
 
             # Output
             if output == 1:
-                Test_result = "The person has Testosterone Deficiency (Level <300 ng/dl)"
+                Test_result = "The medical literature suggests that normal testosterone levels range from 300 to 1200 (ng/dl)\nThe person does not have Testosterone Deficiency (Level >= 300 ng/dl)"
             else:
-                Test_result = "The person does not have Testosterone Deficiency (Level >300 ng/dl)"
+                Test_result = "The medical literature suggests that normal testosterone levels range from 300 to 1200 (ng/dl)\nThe person has Testosterone Deficiency (Level <300 ng/dl)"
 
             st.success(Test_result)
 
