@@ -23,12 +23,7 @@ EXPOSE 80
 
 
 
-RUN mkdir ~/.streamlit
 
-
-
-COPY config.toml ~/.streamlit/config.toml
-COPY credentials.toml ~/.streamlit/credentials.toml
 
 
 
