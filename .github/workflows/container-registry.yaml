@@ -2,16 +2,14 @@ name: Azure Container Registry
 
 on:
   push:
-    branches:
-      main
-
+    branches: main
 
 env:
   IMAGE_NAME: testosterone-deficiency-app
 
 jobs:
   build:
-    name: Bulid container image
+    name: Build container image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
