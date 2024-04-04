@@ -1,6 +1,7 @@
 FROM python:3.9.12-slim
 
 
+WORKDIR /app
 
 
 COPY ./model /app/model
@@ -9,13 +10,12 @@ COPY ./main.py /app
 COPY ./requirements.txt /app
 
 
+RUN pip install virtualenv
+RUN python -m virtualenv venv
 
 
-WORKDIR /app
+RUN /bin/bash -c "source venv/bin/activate && \ pip install -r requirements.txt"
 
-
-
-RUN pip install -r requirements.txt
 
 
 
