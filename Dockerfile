@@ -14,7 +14,7 @@ RUN pip install virtualenv
 RUN python -m virtualenv venv
 
 
-RUN /bin/bash -c source venv/bin/activate 
+RUN source venv/bin/activate 
 RUN pip install -r requirements.txt
 
 
